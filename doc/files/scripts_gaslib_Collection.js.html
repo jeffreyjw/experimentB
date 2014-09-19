@@ -53,6 +53,8 @@
             
                 <li><a href="../classes/Pipe.html">Pipe</a></li>
             
+                <li><a href="../classes/Point.html">Point</a></li>
+            
             </ul>
 
             <ul id="api-modules" class="apis modules">
@@ -119,11 +121,11 @@ define([], function(){
     };
 	
 	/**
-	* getIterator - gets Iterator - object that allows us to iterate
-	* @method getIterator
+	* iterator - gets Iterator - object that allows us to iterate
+	* @method iterator
 	* @returns {Iterator} iterator
 	*/
-	Collection.prototype.getIterator = function(){
+	Collection.prototype.iterator = function(){
 		return this.__iterator;
 	};
 

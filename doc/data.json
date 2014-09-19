@@ -53,6 +53,15 @@
             "fors": {},
             "namespaces": {}
         },
+        "scripts\\gaslib\\Point.js": {
+            "name": "scripts\\gaslib\\Point.js",
+            "modules": {},
+            "classes": {
+                "Point": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
         "scripts\\maplib\\MapDrawer.js": {
             "name": "scripts\\maplib\\MapDrawer.js",
             "modules": {},
@@ -151,6 +160,29 @@
             "description": "Pipe representation - stores informations about specific pipe in the network",
             "is_constructor": 1
         },
+        "Point": {
+            "name": "Point",
+            "shortname": "Point",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "scripts\\gaslib\\Point.js",
+            "line": 5,
+            "description": "Point - represents point (latitude, longitude)",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "latitude",
+                    "description": ""
+                },
+                {
+                    "name": "longitude",
+                    "description": ""
+                }
+            ]
+        },
         "MapDrawer": {
             "name": "MapDrawer",
             "shortname": "MapDrawer",
@@ -234,9 +266,9 @@
         {
             "file": "scripts\\gaslib\\Collection.js",
             "line": 23,
-            "description": "getIterator - gets Iterator - object that allows us to iterate",
+            "description": "iterator - gets Iterator - object that allows us to iterate",
             "itemtype": "method",
-            "name": "getIterator",
+            "name": "iterator",
             "return": {
                 "description": "iterator",
                 "type": "Iterator"
@@ -368,6 +400,40 @@
             "class": "Pipe"
         },
         {
+            "file": "scripts\\gaslib\\Pipe.js",
+            "line": 53,
+            "description": "length - returns length of the pipe (distance between points (start and end))",
+            "itemtype": "method",
+            "name": "length",
+            "return": {
+                "description": "distance",
+                "type": "Number"
+            },
+            "class": "Pipe"
+        },
+        {
+            "file": "scripts\\gaslib\\Point.js",
+            "line": 24,
+            "description": "Latitude in radians",
+            "itemtype": "method",
+            "name": "latInRadians",
+            "return": {
+                "description": "latitude in radians"
+            },
+            "class": "Point"
+        },
+        {
+            "file": "scripts\\gaslib\\Point.js",
+            "line": 33,
+            "description": "Longitude in radians",
+            "itemtype": "method",
+            "name": "lngInRadians",
+            "return": {
+                "description": "longitude in radians"
+            },
+            "class": "Point"
+        },
+        {
             "file": "scripts\\maplib\\MapDrawer.js",
             "line": 38,
             "description": "Run line animations on the map",
@@ -452,6 +518,18 @@
         {
             "message": "replacing incorrect tag: returns with return",
             "line": " scripts\\gaslib\\Pipe.js:37"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Pipe.js:53"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Point.js:24"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Point.js:33"
         },
         {
             "message": "Missing item type\nCollection - stores collection of objects",

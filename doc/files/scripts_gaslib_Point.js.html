@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>scripts\gaslib\GasNetwork.js</title>
+    <title>scripts\gaslib\Point.js</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -94,50 +94,54 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: scripts\gaslib\GasNetwork.js</h1>
+                        <h1 class="file-heading">File: scripts\gaslib\Point.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 define([
-    &quot;gaslib/Collection&quot;
-], function(Collection){
-	
+    &quot;gaslib/Angle&quot;
+], function(Angle){
+
 	/**
-	* GasNetwork - main representation of the gas network
-	* @class GasNetwork
+	* Point - represents point (latitude, longitude)
+	* @class Point
 	* @constructor
-	* @param {Collection}
+    * @param latitude
+    * @param longitude	
 	*/
-    var GasNetwork = function(){
-        this.pipes = new Collection();
-        this.nodes = new Collection();
+
+    var Point = function(lat, lng){
+        lat = lat || 0;
+        lng = lng || 0;
+
+        this.lat = lat;
+        this.lng = lng;
     };
 
 
-    GasNetwork.constructor = GasNetwork;
+    Point.constructor = Point;
 
 	/**
-	* addPipe - adds new Pipe to the network
-	* @method addPipe
-	* @param {Pipe} pipe
+	* Latitude in radians
+	* @method latInRadians
+	* @returns latitude in radians
 	*/
-    GasNetwork.prototype.addPipe = function(pipe){
-        this.pipes.add(pipe);
+    Point.prototype.latInRadians = function(){
+        return Angle.degreeToRadian(this.lat);
     };
 
 	/**
-	* addNode - adds new Node to the network
-	* @method addNode
-	* @param {Node} node
+	* Longitude in radians
+	* @method lngInRadians
+	* @returns longitude in radians
 	*/
-    GasNetwork.prototype.addNode = function(node){
-        this.nodes.add(node);
+    Point.prototype.lngInRadians = function(){
+        return Angle.degreeToRadian(this.lng);
     };
 
+    return Point;
 
-    return GasNetwork;
 });
-
     </pre>
 </div>
 

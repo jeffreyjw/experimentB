@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Node</title>
+    <title>Point</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -94,7 +94,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>Node Class</h1>
+                        <h1>Point Class</h1>
 <div class="box meta">
     
 
@@ -102,7 +102,7 @@
 
     
         <div class="foundat">
-            Defined in: <a href="../files/scripts_gaslib_Node.js.html#l6"><code>scripts\gaslib\Node.js:6</code></a>
+            Defined in: <a href="../files/scripts_gaslib_Point.js.html#l5"><code>scripts\gaslib\Point.js:5</code></a>
         </div>
     
 
@@ -114,15 +114,15 @@
 
 
 <div class="box intro">
-    <p>Class representing a node in the network</p>
+    <p>Point - represents point (latitude, longitude)</p>
 
 </div>
 
 
     <div class="constructor">
         <h2>Constructor</h2>
-        <div id="method_Node" class="method item">
-    <h3 class="name"><code>Node</code></h3>
+        <div id="method_Point" class="method item">
+    <h3 class="name"><code>Point</code></h3>
 
     
         <div class="args">
@@ -130,7 +130,13 @@
             
                 <li class="arg">
                     
-                        <code>point</code>
+                        <code>latitude</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>longitude</code>
                     
                 </li>
             
@@ -163,7 +169,7 @@
             
         
         
-        <a href="../files/scripts_gaslib_Node.js.html#l6"><code>scripts\gaslib\Node.js:6</code></a>
+        <a href="../files/scripts_gaslib_Point.js.html#l5"><code>scripts\gaslib\Point.js:5</code></a>
         
         </p>
 
@@ -185,8 +191,23 @@
             
                 <li class="param">
                     
-                        <code class="param-name">point</code>
-                        <span class="type"><a href="../classes/Point.html" class="crosslink">Point</a></span>
+                        <code class="param-name">latitude</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">longitude</code>
+                        <span class="type">Object</span>
                     
 
                     
@@ -233,14 +254,14 @@
                     <ul class="index-list methods">
                         
                             <li class="index-item method">
-                                <a href="#method_getCaption">getCaption</a>
+                                <a href="#method_latInRadians">latInRadians</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_setCaption">setCaption</a>
+                                <a href="#method_lngInRadians">lngInRadians</a>
 
                                 
                                 
@@ -262,8 +283,8 @@
                 <h2 class="off-left">Methods</h2>
 
                 
-                    <div id="method_getCaption" class="method item">
-    <h3 class="name"><code>getCaption</code></h3>
+                    <div id="method_latInRadians" class="method item">
+    <h3 class="name"><code>latInRadians</code></h3>
 
     
         <span class="paren">()</span>
@@ -271,7 +292,7 @@
 
     
         <span class="returns-inline">
-            <span class="type">String</span>
+            <span class="type"></span>
         </span>
     
 
@@ -298,7 +319,7 @@
             
         
         
-        <a href="../files/scripts_gaslib_Node.js.html#l30"><code>scripts\gaslib\Node.js:30</code></a>
+        <a href="../files/scripts_gaslib_Point.js.html#l24"><code>scripts\gaslib\Point.js:24</code></a>
         
         </p>
 
@@ -309,7 +330,7 @@
     </div>
 
     <div class="description">
-        <p>getCaption - get node&#39;s caption</p>
+        <p>Latitude in radians</p>
 
     </div>
 
@@ -322,9 +343,7 @@
             <div class="returns-description">
                 
                     
-                        <span class="type">String</span>:
-                    
-                    <p>caption</p>
+                    <p>latitude in radians</p>
 
                 
             </div>
@@ -335,23 +354,17 @@
 </div>
 
                 
-                    <div id="method_setCaption" class="method item">
-    <h3 class="name"><code>setCaption</code></h3>
+                    <div id="method_lngInRadians" class="method item">
+    <h3 class="name"><code>lngInRadians</code></h3>
 
     
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-            
-                <li class="arg">
-                    
-                        <code>caption</code>
-                    
-                </li>
-            
-            </ul><span class="paren">)</span>
-        </div>
+        <span class="paren">()</span>
     
 
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
     
 
     
@@ -377,7 +390,7 @@
             
         
         
-        <a href="../files/scripts_gaslib_Node.js.html#l21"><code>scripts\gaslib\Node.js:21</code></a>
+        <a href="../files/scripts_gaslib_Point.js.html#l33"><code>scripts\gaslib\Point.js:33</code></a>
         
         </p>
 
@@ -388,35 +401,24 @@
     </div>
 
     <div class="description">
-        <p>setCaption - sets caption for the Node eg. name of the node - &quot;Node1&quot;</p>
+        <p>Longitude in radians</p>
 
     </div>
 
     
-        <div class="params">
-            <h4>Parameters:</h4>
 
-            <ul class="params-list">
-            
-                <li class="param">
-                    
-                        <code class="param-name">caption</code>
-                        <span class="type">String</span>
-                    
-
-                    
-
-                    <div class="param-description">
-                         
-                    </div>
-
-                    
-                </li>
-            
-            </ul>
-        </div>
     
+        <div class="returns">
+            <h4>Returns:</h4>
 
+            <div class="returns-description">
+                
+                    
+                    <p>longitude in radians</p>
+
+                
+            </div>
+        </div>
     
 
     
