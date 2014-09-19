@@ -21,8 +21,8 @@ define([], function(){
     };
 	
 	/**
-	* getIterator - gets Iterator - object that allows us to iterate
-	* @method getIterator
+	* iterator - gets Iterator - object that allows us to iterate
+	* @method iterator
 	* @returns {Iterator} iterator
 	*/
 	Collection.prototype.iterator = function(){
