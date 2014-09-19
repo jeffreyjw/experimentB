@@ -235,10 +235,29 @@
         },
         {
             "file": "scripts\\gaslib\\Node.js",
-            "line": 15,
-            "description": "Caption of the pipe eg. \"Pipe numer XYZ1\"",
-            "itemtype": "property",
-            "name": "caption",
+            "line": 21,
+            "description": "setCaption - sets caption for the Node eg. name of the node - \"Node1\"",
+            "itemtype": "method",
+            "name": "setCaption",
+            "params": [
+                {
+                    "name": "caption",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "Node"
+        },
+        {
+            "file": "scripts\\gaslib\\Node.js",
+            "line": 30,
+            "description": "getCaption - get node's caption",
+            "itemtype": "method",
+            "name": "getCaption",
+            "return": {
+                "description": "caption",
+                "type": "String"
+            },
             "class": "Node"
         },
         {
@@ -350,6 +369,10 @@
         {
             "message": "param name missing: {Collection}",
             "line": " scripts\\gaslib\\GasNetwork.js:5"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Node.js:30"
         },
         {
             "message": "replacing incorrect tag: returns with return",

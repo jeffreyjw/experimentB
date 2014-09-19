@@ -12,16 +12,29 @@ define([
      */
     var Node = function(){
         this.position = new Point();
-		/**
-		* Caption of the pipe eg. "Pipe numer XYZ1"
-		* @property caption
-		*/
-        this.caption = "Node";
+        this._caption = "Node";
     };
 
 
     Node.constructor = Node;
-
+	
+	/**
+	*setCaption - sets caption for the Node eg. name of the node - "Node1"
+	*@method setCaption
+	* @param {String} caption
+	*/
+	Node.prototype.setCaption = function(caption) {
+		this._caption = caption;
+	};
+	
+	/**
+	* getCaption - get node's caption
+	* @method getCaption
+	* @returns {String} caption 
+	*/
+	Node.prototype.getCaption = function() {
+		return this._caption;
+	};
 
     return Node;
 });
