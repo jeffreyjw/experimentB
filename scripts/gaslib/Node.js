@@ -8,7 +8,6 @@ define([
      *
      * @class Node
      * @constructor
-	 * @param {Point} point
      */
     var Node = function(){
         this.position = new Point();

@@ -6,7 +6,6 @@ define([
 	* GasNetwork - main representation of the gas network
 	* @class GasNetwork
 	* @constructor
-	* @param {Collection}
 	*/
     var GasNetwork = function(){
         this.pipes = new Collection();

@@ -98,14 +98,7 @@
             "file": "scripts\\gaslib\\GasNetwork.js",
             "line": 5,
             "description": "GasNetwork - main representation of the gas network",
-            "is_constructor": 1,
-            "params": [
-                {
-                    "name": "UNKNOWN",
-                    "description": "",
-                    "type": "Collection"
-                }
-            ]
+            "is_constructor": 1
         },
         "Iterator": {
             "name": "Iterator",
@@ -138,14 +131,7 @@
             "file": "scripts\\gaslib\\Node.js",
             "line": 6,
             "description": "Class representing a node in the network",
-            "is_constructor": 1,
-            "params": [
-                {
-                    "name": "point",
-                    "description": "",
-                    "type": "Point"
-                }
-            ]
+            "is_constructor": 1
         },
         "Pipe": {
             "name": "Pipe",
@@ -277,7 +263,7 @@
         },
         {
             "file": "scripts\\gaslib\\GasNetwork.js",
-            "line": 19,
+            "line": 18,
             "description": "addPipe - adds new Pipe to the network",
             "itemtype": "method",
             "name": "addPipe",
@@ -292,7 +278,7 @@
         },
         {
             "file": "scripts\\gaslib\\GasNetwork.js",
-            "line": 28,
+            "line": 27,
             "description": "addNode - adds new Node to the network",
             "itemtype": "method",
             "name": "addNode",
@@ -330,7 +316,7 @@
         },
         {
             "file": "scripts\\gaslib\\Node.js",
-            "line": 21,
+            "line": 20,
             "description": "setName - sets caption for the Node eg. name of the node - \"Node1\"",
             "itemtype": "method",
             "name": "setName",
@@ -345,7 +331,7 @@
         },
         {
             "file": "scripts\\gaslib\\Node.js",
-            "line": 30,
+            "line": 29,
             "description": "getName - get node's name",
             "itemtype": "method",
             "name": "getName",
@@ -500,10 +486,6 @@
             "line": " scripts\\gaslib\\Collection.js:23"
         },
         {
-            "message": "param name missing: {Collection}",
-            "line": " scripts\\gaslib\\GasNetwork.js:5"
-        },
-        {
             "message": "replacing incorrect tag: returns with return",
             "line": " scripts\\gaslib\\Iterator.js:18"
         },
@@ -513,7 +495,7 @@
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " scripts\\gaslib\\Node.js:30"
+            "line": " scripts\\gaslib\\Node.js:29"
         },
         {
             "message": "replacing incorrect tag: returns with return",
