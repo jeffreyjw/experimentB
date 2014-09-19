@@ -13,7 +13,7 @@ define([], function(){
      * Converts degrees to radians
      *
      * @method degreeToRadian
-     * @param degree angle in degrees
+     * @param {number} degree angle in degrees
      * @returns {number} angle in radians
      */
     Angle.degreeToRadian = function(degree){
@@ -25,7 +25,7 @@ define([], function(){
      * Converts radians to degrees
      *
      * @method radianToDegree
-     * @param radian
+     * @param {number} radian
      * @returns {number}
      */
     Angle.radianToDegree = function(radian){
