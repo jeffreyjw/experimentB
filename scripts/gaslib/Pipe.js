@@ -49,6 +49,15 @@ define([
             return 0;
         }
     };
+	
+	/**
+	* length - returns length of the pipe (distance between points (start and end))
+	* @method length
+	* @returns {Number} distance
+	*/
+	Pipe.prototype.length = function() {
+		return Helpers.distanceInKm(this.start, this.finish);
+	};
 
 
     return Pipe;

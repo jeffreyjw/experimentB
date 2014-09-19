@@ -39,7 +39,7 @@ define([], function(){
 	Iterator.prototype.next = function() {
 		this.position++;
 		return this.collection[this.position];
-	}
+	};
 
 
     return Iterator;
