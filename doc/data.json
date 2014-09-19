@@ -10,6 +10,13 @@
             "fors": {},
             "namespaces": {}
         },
+        "scripts\\gaslib\\Collection.js": {
+            "name": "scripts\\gaslib\\Collection.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
         "scripts\\gaslib\\GasNetwork.js": {
             "name": "scripts\\gaslib\\GasNetwork.js",
             "modules": {},
@@ -105,7 +112,7 @@
             "params": [
                 {
                     "name": "collection",
-                    "description": "the collection that is being iterated at",
+                    "description": "- collection that is being iterated at",
                     "type": "Array"
                 }
             ],
@@ -202,6 +209,39 @@
                 "type": "Number"
             },
             "class": "Angle"
+        },
+        {
+            "file": "scripts\\gaslib\\Collection.js",
+            "line": 2,
+            "description": "Collection - stores collection of objects",
+            "is_constructor": 1,
+            "class": "GasNetwork"
+        },
+        {
+            "file": "scripts\\gaslib\\Collection.js",
+            "line": 14,
+            "description": "add - adds new element to the Collection",
+            "itemtype": "method",
+            "name": "add",
+            "params": [
+                {
+                    "name": "element",
+                    "description": ""
+                }
+            ],
+            "class": "GasNetwork"
+        },
+        {
+            "file": "scripts\\gaslib\\Collection.js",
+            "line": 23,
+            "description": "getIterator - gets Iterator - object that allows us to iterate",
+            "itemtype": "method",
+            "name": "getIterator",
+            "return": {
+                "description": "iterator",
+                "type": "Iterator"
+            },
+            "class": "GasNetwork"
         },
         {
             "file": "scripts\\gaslib\\GasNetwork.js",
@@ -367,6 +407,10 @@
             "line": " scripts\\gaslib\\Angle.js:24"
         },
         {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Collection.js:23"
+        },
+        {
             "message": "param name missing: {Collection}",
             "line": " scripts\\gaslib\\GasNetwork.js:5"
         },
@@ -377,6 +421,10 @@
         {
             "message": "replacing incorrect tag: returns with return",
             "line": " scripts\\gaslib\\Pipe.js:37"
+        },
+        {
+            "message": "Missing item type\nCollection - stores collection of objects",
+            "line": " scripts\\gaslib\\Collection.js:2"
         }
     ]
 }

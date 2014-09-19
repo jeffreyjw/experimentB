@@ -4,7 +4,7 @@ define([], function(){
      * The Iterator class
      *
      * @class Iterator
-     * @param {Array} collection the collection that is being iterated at
+     * @param {Array} collection - collection that is being iterated at
      * @constructor
      */
     var Iterator = function(collection){
