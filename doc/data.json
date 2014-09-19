@@ -1,0 +1,211 @@
+{
+    "project": {},
+    "files": {
+        "scripts\\gaslib\\Angle.js": {
+            "name": "scripts\\gaslib\\Angle.js",
+            "modules": {},
+            "classes": {
+                "Angle": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scripts\\gaslib\\Iterator.js": {
+            "name": "scripts\\gaslib\\Iterator.js",
+            "modules": {},
+            "classes": {
+                "Iterator": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scripts\\gaslib\\Node.js": {
+            "name": "scripts\\gaslib\\Node.js",
+            "modules": {},
+            "classes": {
+                "Node": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scripts\\maplib\\MapDrawer.js": {
+            "name": "scripts\\maplib\\MapDrawer.js",
+            "modules": {},
+            "classes": {
+                "MapDrawer": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Angle": {
+            "name": "Angle",
+            "shortname": "Angle",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "scripts\\gaslib\\Angle.js",
+            "line": 3,
+            "description": "Angle converter",
+            "is_constructor": 1
+        },
+        "Iterator": {
+            "name": "Iterator",
+            "shortname": "Iterator",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "scripts\\gaslib\\Iterator.js",
+            "line": 3,
+            "description": "The Iterator class",
+            "params": [
+                {
+                    "name": "collection",
+                    "description": "the collection that is being iterated at",
+                    "type": "Array"
+                }
+            ],
+            "is_constructor": 1
+        },
+        "Node": {
+            "name": "Node",
+            "shortname": "Node",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "scripts\\gaslib\\Node.js",
+            "line": 6,
+            "description": "Class representing a node in the network",
+            "is_constructor": 1
+        },
+        "MapDrawer": {
+            "name": "MapDrawer",
+            "shortname": "MapDrawer",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "scripts\\maplib\\MapDrawer.js",
+            "line": 4,
+            "description": "Map drawing class - abstraction for easier use of google maps",
+            "params": [
+                {
+                    "name": "mapElement",
+                    "description": "HTML Element to which put the map"
+                }
+            ],
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "scripts\\gaslib\\Angle.js",
+            "line": 12,
+            "description": "Converts degrees to radians",
+            "itemtype": "method",
+            "name": "degreeToRadian",
+            "params": [
+                {
+                    "name": "degree",
+                    "description": "angle in degrees",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "angle in radians",
+                "type": "Number"
+            },
+            "class": "Angle"
+        },
+        {
+            "file": "scripts\\gaslib\\Angle.js",
+            "line": 24,
+            "description": "Converts radians to degrees",
+            "itemtype": "method",
+            "name": "radianToDegree",
+            "params": [
+                {
+                    "name": "radian",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Angle"
+        },
+        {
+            "file": "scripts\\maplib\\MapDrawer.js",
+            "line": 38,
+            "description": "Run line animations on the map",
+            "itemtype": "method",
+            "name": "initAnimations",
+            "class": "MapDrawer"
+        },
+        {
+            "file": "scripts\\maplib\\MapDrawer.js",
+            "line": 71,
+            "description": "Draws a line on the map",
+            "itemtype": "method",
+            "name": "drawLine",
+            "params": [
+                {
+                    "name": "start",
+                    "description": "Starting point on the map",
+                    "type": "Point"
+                },
+                {
+                    "name": "finish",
+                    "description": "Finishing point on the map",
+                    "type": "Point"
+                },
+                {
+                    "name": "options",
+                    "description": "options for the line: weight, popup, color, speed",
+                    "type": "Object"
+                }
+            ],
+            "class": "MapDrawer"
+        },
+        {
+            "file": "scripts\\maplib\\MapDrawer.js",
+            "line": 129,
+            "description": "Draws a marker on the map",
+            "itemtype": "method",
+            "name": "drawMarker",
+            "params": [
+                {
+                    "name": "position",
+                    "description": "position of the marker on the map",
+                    "type": "Point"
+                },
+                {
+                    "name": "options",
+                    "description": "Options of the marker: caption, content, popup"
+                }
+            ],
+            "class": "MapDrawer"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Angle.js:12"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Angle.js:24"
+        }
+    ]
+}
