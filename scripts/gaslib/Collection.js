@@ -25,7 +25,7 @@ define([], function(){
 	* @method getIterator
 	* @returns {Iterator} iterator
 	*/
-	Collection.prototype.getIterator = function(){
+	Collection.prototype.iterator = function(){
 		return this.__iterator;
 	};
 
