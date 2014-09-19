@@ -10,6 +10,15 @@
             "fors": {},
             "namespaces": {}
         },
+        "scripts\\gaslib\\GasNetwork.js": {
+            "name": "scripts\\gaslib\\GasNetwork.js",
+            "modules": {},
+            "classes": {
+                "GasNetwork": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
         "scripts\\gaslib\\Iterator.js": {
             "name": "scripts\\gaslib\\Iterator.js",
             "modules": {},
@@ -24,6 +33,15 @@
             "modules": {},
             "classes": {
                 "Node": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scripts\\gaslib\\Pipe.js": {
+            "name": "scripts\\gaslib\\Pipe.js",
+            "modules": {},
+            "classes": {
+                "Pipe": 1
             },
             "fors": {},
             "namespaces": {}
@@ -52,6 +70,26 @@
             "line": 3,
             "description": "Angle converter",
             "is_constructor": 1
+        },
+        "GasNetwork": {
+            "name": "GasNetwork",
+            "shortname": "GasNetwork",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "scripts\\gaslib\\GasNetwork.js",
+            "line": 5,
+            "description": "GasNetwork - main representation of the gas network",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "UNKNOWN",
+                    "description": "",
+                    "type": "Collection"
+                }
+            ]
         },
         "Iterator": {
             "name": "Iterator",
@@ -84,6 +122,26 @@
             "file": "scripts\\gaslib\\Node.js",
             "line": 6,
             "description": "Class representing a node in the network",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "point",
+                    "description": "",
+                    "type": "Point"
+                }
+            ]
+        },
+        "Pipe": {
+            "name": "Pipe",
+            "shortname": "Pipe",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "scripts\\gaslib\\Pipe.js",
+            "line": 6,
+            "description": "Pipe representation - stores informations about specific pipe in the network",
             "is_constructor": 1
         },
         "MapDrawer": {
@@ -146,6 +204,88 @@
             "class": "Angle"
         },
         {
+            "file": "scripts\\gaslib\\GasNetwork.js",
+            "line": 19,
+            "description": "addPipe - adds new Pipe to the network",
+            "itemtype": "method",
+            "name": "addPipe",
+            "params": [
+                {
+                    "name": "pipe",
+                    "description": "",
+                    "type": "Pipe"
+                }
+            ],
+            "class": "GasNetwork"
+        },
+        {
+            "file": "scripts\\gaslib\\GasNetwork.js",
+            "line": 28,
+            "description": "addNode - adds new Node to the network",
+            "itemtype": "method",
+            "name": "addNode",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "",
+                    "type": "Node"
+                }
+            ],
+            "class": "GasNetwork"
+        },
+        {
+            "file": "scripts\\gaslib\\Node.js",
+            "line": 15,
+            "description": "Caption of the pipe eg. \"Pipe numer XYZ1\"",
+            "itemtype": "property",
+            "name": "caption",
+            "class": "Node"
+        },
+        {
+            "file": "scripts\\gaslib\\Pipe.js",
+            "line": 12,
+            "description": "Flow",
+            "itemtype": "property",
+            "name": "flow",
+            "class": "Pipe"
+        },
+        {
+            "file": "scripts\\gaslib\\Pipe.js",
+            "line": 17,
+            "description": "maxFlow in pipe",
+            "itemtype": "property",
+            "name": "maxFlow",
+            "class": "Pipe"
+        },
+        {
+            "file": "scripts\\gaslib\\Pipe.js",
+            "line": 22,
+            "description": "Starting point of the pipe",
+            "itemtype": "property",
+            "name": "start",
+            "class": "Pipe"
+        },
+        {
+            "file": "scripts\\gaslib\\Pipe.js",
+            "line": 27,
+            "description": "Ending point of the pipe",
+            "itemtype": "property",
+            "name": "finish",
+            "class": "Pipe"
+        },
+        {
+            "file": "scripts\\gaslib\\Pipe.js",
+            "line": 37,
+            "description": "Returns flot divided by maxFlow (flow/maxFlow)",
+            "itemtype": "method",
+            "name": "usage",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Pipe"
+        },
+        {
             "file": "scripts\\maplib\\MapDrawer.js",
             "line": 38,
             "description": "Run line animations on the map",
@@ -206,6 +346,14 @@
         {
             "message": "replacing incorrect tag: returns with return",
             "line": " scripts\\gaslib\\Angle.js:24"
+        },
+        {
+            "message": "param name missing: {Collection}",
+            "line": " scripts\\gaslib\\GasNetwork.js:5"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Pipe.js:37"
         }
     ]
 }

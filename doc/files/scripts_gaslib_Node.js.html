@@ -43,11 +43,15 @@
             
                 <li><a href="../classes/Angle.html">Angle</a></li>
             
+                <li><a href="../classes/GasNetwork.html">GasNetwork</a></li>
+            
                 <li><a href="../classes/Iterator.html">Iterator</a></li>
             
                 <li><a href="../classes/MapDrawer.html">MapDrawer</a></li>
             
                 <li><a href="../classes/Node.html">Node</a></li>
+            
+                <li><a href="../classes/Pipe.html">Pipe</a></li>
             
             </ul>
 
@@ -102,9 +106,14 @@ define([
      *
      * @class Node
      * @constructor
+	 * @param {Point} point
      */
     var Node = function(){
         this.position = new Point();
+		/**
+		* Caption of the pipe eg. &quot;Pipe numer XYZ1&quot;
+		* @property caption
+		*/
         this.caption = &quot;Node&quot;;
     };
 

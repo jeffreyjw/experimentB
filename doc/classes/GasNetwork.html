@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Node</title>
+    <title>GasNetwork</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -92,7 +92,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>Node Class</h1>
+                        <h1>GasNetwork Class</h1>
 <div class="box meta">
     
 
@@ -100,7 +100,7 @@
 
     
         <div class="foundat">
-            Defined in: <a href="../files/scripts_gaslib_Node.js.html#l6"><code>scripts\gaslib\Node.js:6</code></a>
+            Defined in: <a href="../files/scripts_gaslib_GasNetwork.js.html#l5"><code>scripts\gaslib\GasNetwork.js:5</code></a>
         </div>
     
 
@@ -112,15 +112,15 @@
 
 
 <div class="box intro">
-    <p>Class representing a node in the network</p>
+    <p>GasNetwork - main representation of the gas network</p>
 
 </div>
 
 
     <div class="constructor">
         <h2>Constructor</h2>
-        <div id="method_Node" class="method item">
-    <h3 class="name"><code>Node</code></h3>
+        <div id="method_GasNetwork" class="method item">
+    <h3 class="name"><code>GasNetwork</code></h3>
 
     
         <div class="args">
@@ -128,7 +128,7 @@
             
                 <li class="arg">
                     
-                        <code>point</code>
+                        <code>UNKNOWN</code>
                     
                 </li>
             
@@ -161,7 +161,7 @@
             
         
         
-        <a href="../files/scripts_gaslib_Node.js.html#l6"><code>scripts\gaslib\Node.js:6</code></a>
+        <a href="../files/scripts_gaslib_GasNetwork.js.html#l5"><code>scripts\gaslib\GasNetwork.js:5</code></a>
         
         </p>
 
@@ -183,8 +183,8 @@
             
                 <li class="param">
                     
-                        <code class="param-name">point</code>
-                        <span class="type">Point</span>
+                        <code class="param-name">UNKNOWN</code>
+                        <span class="type">Collection</span>
                     
 
                     
@@ -213,8 +213,8 @@
         <li class="api-class-tab index"><a href="#index">Index</a></li>
 
         
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
         
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
         
         
         
@@ -225,15 +225,20 @@
             <h2 class="off-left">Item Index</h2>
 
             
+                <div class="index-section methods">
+                    <h3>Methods</h3>
 
-            
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties">
+                    <ul class="index-list methods">
                         
-                            <li class="index-item property">
-                                <a href="#property_caption">caption</a>
+                            <li class="index-item method">
+                                <a href="#method_addNode">addNode</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_addPipe">addPipe</a>
 
                                 
                                 
@@ -246,18 +251,37 @@
             
 
             
+
+            
         </div>
 
         
-
-        
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
 
                 
-                    <div id="property_caption" class="property item">
-    <h3 class="name"><code>caption</code></h3>
-    <span class="type">Unknown</span>
+                    <div id="method_addNode" class="method item">
+    <h3 class="name"><code>addNode</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>node</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
 
     
 
@@ -278,9 +302,10 @@
             
         
         
-        <a href="../files/scripts_gaslib_Node.js.html#l15"><code>scripts\gaslib\Node.js:15</code></a>
+        <a href="../files/scripts_gaslib_GasNetwork.js.html#l28"><code>scripts\gaslib\GasNetwork.js:28</code></a>
         
         </p>
+
 
         
 
@@ -288,10 +313,121 @@
     </div>
 
     <div class="description">
-        <p>Caption of the pipe eg. &quot;Pipe numer XYZ1&quot;</p>
+        <p>addNode - adds new Node to the network</p>
 
     </div>
 
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">node</code>
+                        <span class="type"><a href="../classes/Node.html" class="crosslink">Node</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_addPipe" class="method item">
+    <h3 class="name"><code>addPipe</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>pipe</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/scripts_gaslib_GasNetwork.js.html#l19"><code>scripts\gaslib\GasNetwork.js:19</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>addPipe - adds new Pipe to the network</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">pipe</code>
+                        <span class="type"><a href="../classes/Pipe.html" class="crosslink">Pipe</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
     
 
     
@@ -301,6 +437,8 @@
 
                 
             </div>
+        
+
         
 
         
