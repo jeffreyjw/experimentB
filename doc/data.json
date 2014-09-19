@@ -274,6 +274,29 @@
             "class": "GasNetwork"
         },
         {
+            "file": "scripts\\gaslib\\Iterator.js",
+            "line": 18,
+            "description": "hasNext - check if there is a next element in the collection",
+            "itemtype": "method",
+            "name": "hasNext",
+            "return": {
+                "description": "true - if there is next element, false if there is not",
+                "type": "Boolean"
+            },
+            "class": "Iterator"
+        },
+        {
+            "file": "scripts\\gaslib\\Iterator.js",
+            "line": 34,
+            "description": "next - get next element from the collection",
+            "itemtype": "method",
+            "name": "next",
+            "return": {
+                "description": "next element from the collection"
+            },
+            "class": "Iterator"
+        },
+        {
             "file": "scripts\\gaslib\\Node.js",
             "line": 21,
             "description": "setCaption - sets caption for the Node eg. name of the node - \"Node1\"",
@@ -413,6 +436,14 @@
         {
             "message": "param name missing: {Collection}",
             "line": " scripts\\gaslib\\GasNetwork.js:5"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Iterator.js:18"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " scripts\\gaslib\\Iterator.js:34"
         },
         {
             "message": "replacing incorrect tag: returns with return",
