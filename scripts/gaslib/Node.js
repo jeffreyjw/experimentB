@@ -12,7 +12,7 @@ define([
      */
     var Node = function(){
         this.position = new Point();
-        this._caption = "Node";
+        this.__caption = "Node";
     };
 
 
@@ -24,7 +24,7 @@ define([
 	* @param {String} caption
 	*/
 	Node.prototype.setCaption = function(caption) {
-		this._caption = caption;
+		this.__caption = caption;
 	};
 	
 	/**
@@ -33,7 +33,7 @@ define([
 	* @returns {String} caption 
 	*/
 	Node.prototype.getCaption = function() {
-		return this._caption;
+		return this.__caption;
 	};
 
     return Node;
